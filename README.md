@@ -38,5 +38,5 @@ C#の学習カリキュラムを修了し、Unity開発に移行してから初�
   （Transform.TranslateからRigidbody.MovePosition / MoveRotationへ）
 
 ## プレイ
-https://rean0623.itch.io/tankgame
-
+itch.io: https://rean0623.itch.io/tankgame
+GitHub Releases: https://github.com/Rean0623/TankGame/releases/latest
