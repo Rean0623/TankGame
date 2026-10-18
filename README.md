@@ -1,38 +1,42 @@
 # TankGame
+プログラミング未経験から3か月で一人で制作した、Unity製の戦車バトルゲームです。
+初心者から完成作品までの過程をまとめた作品です。
 
-A tank battle game built solo over three months by a developer 
-starting from zero programming experience — a complete journey 
-from beginner to shipped game.
+## 概要
+Unityで制作したシングルプレイの戦車バトルゲームです。戦闘、スコア管理、設定機能を備えています。
+C#の学習カリキュラムを修了し、Unity開発に移行してから初めて完成させた作品です。
 
-## Overview
-A single-player tank battle game built in Unity, featuring combat, 
-scoring, and a full settings system. This project marks my first 
-complete game built after finishing a full C# curriculum and 
-transitioning into Unity development.
+## 機能
+- プレイヤーと敵のHPバー、シールドシステム
+- 武器の取得システム
+- カメラ追従
+- ミニマップ表示
+- スコアとタイムの計測、PlayerPrefsを使った永続的なランキング
+- ゲームクリア / ゲームオーバー画面
+- BGM / SEの音量スライダー付き設定パネル
+- シングルトンのSoundManager（DontDestroyOnLoad）によるシーン間のBGM維持
+- Unity IMGUIで構築したUI
 
-## Features
-- Player and enemy health bar system with a shield mechanic
-- Weapon pickup system
-- Camera follow
-- Score and time tracking with a persistent leaderboard (PlayerPrefs-based)
-- Game Clear / Game Over screens
-- Settings panel with BGM/SFX volume sliders
-- Cross-scene BGM persistence via a singleton SoundManager (DontDestroyOnLoad)
-- Full UI built with Unity IMGUI
-
-## Tech Stack
+## 使用技術
 - Unity 6
 - C#
-- Rigidbody-based physics movement
+- Rigidbodyによる物理ベースの移動
 
-## What I Learned
-- Managing game state across scenes (score, settings, audio) using 
-  singleton patterns
-- Debugging real Unity-specific issues: race conditions on max HP, 
-  self-damage tag bugs, Time.timeScale resets on retry, IMGUI 
-  coordinate systems, and cursor lock behavior
-- Incorporating senior developer feedback on physics-correct movement 
-  (switching from Transform.Translate to Rigidbody.MovePosition/MoveRotation)
+## 更新履歴
+### v1.1
+- ファイル名とC#スクリプト名を日本語に統一
+- プレイヤーの弾の射程が長すぎる問題を修正
+- プレイヤーと敵戦車のHPを調整
+- 回復アイテムの回復量を調整
+- ミニマップのサイズ比率を修正
+- ランキングの順位表示のバグを修正
 
-## Play
+## 学んだこと
+- シングルトンパターンを使った、シーンをまたぐゲーム状態（スコア、設定、音声）の管理
+- Unity特有の問題のデバッグ：最大HPの競合状態、自傷ダメージのタグ判定バグ、リトライ時のTime.timeScaleのリセット、IMGUIの座標系、カーソルロックの挙動
+- 先輩エンジニアのフィードバックを受けた、物理的に正しい移動処理への変更
+  （Transform.TranslateからRigidbody.MovePosition / MoveRotationへ）
+
+## プレイ
 https://rean0623.itch.io/tankgame
+
