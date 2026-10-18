@@ -12,7 +12,8 @@ TagManager:
   - ShieldItem
   - WeaponItem
   - EnemyBullet
-  - tgd
+  - PlayerBullet
+  - Goal
   layers:
   - Default
   - TransparentFX
